@@ -13,4 +13,24 @@ module.exports = function towelSort(matrix) {
         });
         return newArr.flat(1);
     }
+
+
+/*
+    Метод .flat(), написанный вручную (разворачивает любые массивы в один)
+
+    const newList = [];
+
+    const isArrayChecking = (slovo) => {
+        for (let i = 0; i < slovo.length; i++) {
+            if (!Array.isArray(slovo[i])) {
+                newList.push(slovo[i]);
+            } else {
+                isArrayChecking(slovo[i]);
+            }
+        }
+        return newList;
+    };
+    return isArrayChecking(list);
+*/
+
 };
